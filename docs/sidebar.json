@@ -1,10 +1,10 @@
 {
   "telco_churn_zig": {
     "Overview": "/",
-    "00 eploration": "/exploration",
-    "01 Features generation": "/features",
-    "02 User profile churn modeling": "/user_profile",
-    "02 geolocation churn ": "/geolocation_profile",
-    "03A user churn model": "/churn_model"
+    "00 eploration": "exploration.html",
+    "01 Features generation": "features.html",
+    "02 User profile churn modeling": "02A_user_profile.html",
+    "02 geolocation churn ": "02B_geolocation_profile.html",
+    "03A user churn model": "03A_churn_model.html"
   }
 }

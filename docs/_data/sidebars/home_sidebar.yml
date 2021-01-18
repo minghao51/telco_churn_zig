@@ -11,19 +11,19 @@ entries:
       url: /
     - output: web,pdf
       title: 00 eploration
-      url: /exploration
+      url: exploration.html
     - output: web,pdf
       title: 01 Features generation
-      url: /features
+      url: features.html
     - output: web,pdf
       title: 02 User profile churn modeling
-      url: /user_profile
+      url: 02A_user_profile.html
     - output: web,pdf
       title: '02 geolocation churn '
-      url: /geolocation_profile
+      url: 02B_geolocation_profile.html
     - output: web,pdf
       title: 03A user churn model
-      url: /churn_model
+      url: 03A_churn_model.html
     output: web
     title: telco_churn_zig
   output: web

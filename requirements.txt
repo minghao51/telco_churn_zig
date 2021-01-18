@@ -58,9 +58,9 @@ mistune==0.8.4
 msgpack==1.0.2
 nbclassic==0.2.6
 nbclient==0.5.1
-nbconvert==5.6.1
-nbdev==0.2.40
-nbformat==5.1.2
+nbconvert
+nbdev==1.1.5
+nbformat==5.0.8
 nest-asyncio==1.4.3
 networkx==2.5
 notebook==6.2.0

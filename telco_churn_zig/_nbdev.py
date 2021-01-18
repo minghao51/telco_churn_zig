@@ -24,11 +24,11 @@ index = {"read_tsv": "02B_geolocation_profile.ipynb",
          "add_prefix_columns": "02A_user_profile.ipynb",
          "shorten_columns_str": "02A_user_profile.ipynb"}
 
-modules = ["L0_exploration/py.py",
-           "L1_features_gen/py.py",
-           "L2A_user_model_explore/py.py",
-           "L2B_geo_model_explore/py.py",
-           "L3A_user_model/py.py"]
+modules = ["L0_exploration.py",
+           "L1_features_gen.py",
+           "L2A_user_model_explore.py",
+           "L2B_geo_model_explore.py",
+           "L3A_user_model.py"]
 
 doc_url = "https://howt51.github.io/telco_churn_zig/"
 
