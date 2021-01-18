@@ -2,6 +2,7 @@
 
 title: 01 Features generation
 
+
 keywords: fastai
 sidebar: home_sidebar
 
@@ -66,6 +67,377 @@ nb_path: "01_features.ipynb"
 </div>
 </div>
 </div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="read_tsv" class="doc_header"><code>read_tsv</code><a href="https://github.com/howt51/telco_churn_zig/tree/master/telco_churn_zig/L1_features_gen.py#L21" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>read_tsv</code>(<strong><code>file</code></strong>:<code>str</code>)</p>
+</blockquote>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="gzip_reading" class="doc_header"><code>gzip_reading</code><a href="https://github.com/howt51/telco_churn_zig/tree/master/telco_churn_zig/L1_features_gen.py#L24" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>gzip_reading</code>(<strong><code>gzip_file</code></strong>)</p>
+</blockquote>
+<p>Read all tsv.gz files in the zip file and returning a dictionary (key:filename, value:data)</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="school_plan__features" class="doc_header"><code>school_plan__features</code><a href="https://github.com/howt51/telco_churn_zig/tree/master/telco_churn_zig/L1_features_gen.py#L37" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>school_plan__features</code>(<strong><code>data</code></strong>:<code>DataFrame</code>)</p>
+</blockquote>
+<p>Calculate the number of school (and its associated types) within the planning area</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="translate_latlng" class="doc_header"><code>translate_latlng</code><a href="https://github.com/howt51/telco_churn_zig/tree/master/telco_churn_zig/L1_features_gen.py#L47" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>translate_latlng</code>(<strong><code>input</code></strong>:<code>list</code>)</p>
+</blockquote>
+<p>Translating the lat lng into tuple format, to be used to mathematically identify the nearest neighbor</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="kdtree_neighbors" class="doc_header"><code>kdtree_neighbors</code><a href="https://github.com/howt51/telco_churn_zig/tree/master/telco_churn_zig/L1_features_gen.py#L53" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>kdtree_neighbors</code>(<strong><code>reference</code></strong>:<code>list</code>, <strong><code>query_data</code></strong>:<code>list</code>)</p>
+</blockquote>
+<p>Identify the nearest neighbor for <em>query_data</em>[list of (lat,lng)] to the <em>reference</em>[list of (lat,lng)], returning the matching reference index</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="train_plan__latlng" class="doc_header"><code>train_plan__latlng</code><a href="https://github.com/howt51/telco_churn_zig/tree/master/telco_churn_zig/L1_features_gen.py#L58" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>train_plan__latlng</code>(<strong><code>data</code></strong>:<code>DataFrame</code>)</p>
+</blockquote>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="train_plan__nbusers" class="doc_header"><code>train_plan__nbusers</code><a href="https://github.com/howt51/telco_churn_zig/tree/master/telco_churn_zig/L1_features_gen.py#L64" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>train_plan__nbusers</code>(<strong><code>data</code></strong>:<code>DataFrame</code>)</p>
+</blockquote>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="train_time_features" class="doc_header"><code>train_time_features</code><a href="https://github.com/howt51/telco_churn_zig/tree/master/telco_churn_zig/L1_features_gen.py#L67" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>train_time_features</code>(<strong><code>data</code></strong>:<code>DataFrame</code>)</p>
+</blockquote>
+<p>Modify the train dataset inplace to generate time features (<em>month_delta</em> and <em>account start year</em>)</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="census_income_median" class="doc_header"><code>census_income_median</code><a href="https://github.com/howt51/telco_churn_zig/tree/master/telco_churn_zig/L1_features_gen.py#L74" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>census_income_median</code>(<strong><code>data</code></strong>:<code>DataFrame</code>)</p>
+</blockquote>
+<p>Calculate the median income and working pop for region excluding outliers (above 10K SGD and 0 SGD)</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="census_income_avg" class="doc_header"><code>census_income_avg</code><a href="https://github.com/howt51/telco_churn_zig/tree/master/telco_churn_zig/L1_features_gen.py#L84" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>census_income_avg</code>(<strong><code>data</code></strong>:<code>DataFrame</code>)</p>
+</blockquote>
+<p>Calculate average income based on the avg(pop * income)</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="gini_processing" class="doc_header"><code>gini_processing</code><a href="https://github.com/howt51/telco_churn_zig/tree/master/telco_churn_zig/L1_features_gen.py#L95" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>gini_processing</code>(<strong><code>census_perc_dt_melt</code></strong>:<code>DataFrame</code>)</p>
+</blockquote>
+<p>Parsing the income percent into np.array for gini calculation</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="gini" class="doc_header"><code>gini</code><a href="https://github.com/howt51/telco_churn_zig/tree/master/telco_churn_zig/L1_features_gen.py#L127" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>gini</code>(<strong><code>array</code></strong>)</p>
+</blockquote>
+<p>Calculate the Gini coefficient of a numpy array.</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="census_sentiment_analy" class="doc_header"><code>census_sentiment_analy</code><a href="https://github.com/howt51/telco_churn_zig/tree/master/telco_churn_zig/L1_features_gen.py#L144" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>census_sentiment_analy</code>(<strong><code>input</code></strong>:<code>str</code>)</p>
+</blockquote>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="convert_sent2score" class="doc_header"><code>convert_sent2score</code><a href="https://github.com/howt51/telco_churn_zig/tree/master/telco_churn_zig/L1_features_gen.py#L148" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>convert_sent2score</code>(<strong><code>input</code></strong>:<code>dict</code>)</p>
+</blockquote>
+<p>Extract and convert the sentimental assignemnt to 0 (Negative), 0.5 (Neutral), 1 (Positive)</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="transform_churn_series" class="doc_header"><code>transform_churn_series</code><a href="https://github.com/howt51/telco_churn_zig/tree/master/telco_churn_zig/L1_features_gen.py#L160" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>transform_churn_series</code>(<strong><code>extracted_features_dt</code></strong>:<code>DataFrame</code>, <strong><code>dt_churn</code></strong>:<code>DataFrame</code>)</p>
+</blockquote>
+<p>Extract churn data for significant test in x</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -227,377 +599,6 @@ nb_path: "01_features.ipynb"
 </pre></div>
 
     </div>
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<h4 id="read_tsv" class="doc_header"><code>read_tsv</code><a href="__main__.py#L2" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>read_tsv</code>(<strong><code>file</code></strong>:<code>str</code>)</p>
-</blockquote>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<h4 id="gzip_reading" class="doc_header"><code>gzip_reading</code><a href="__main__.py#L5" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>gzip_reading</code>(<strong><code>gzip_file</code></strong>)</p>
-</blockquote>
-<p>Read all tsv.gz files in the zip file and returning a dictionary (key:filename, value:data)</p>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<h4 id="school_plan__features" class="doc_header"><code>school_plan__features</code><a href="__main__.py#L18" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>school_plan__features</code>(<strong><code>data</code></strong>:<code>DataFrame</code>)</p>
-</blockquote>
-<p>Calculate the number of school (and its associated types) within the planning area</p>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<h4 id="translate_latlng" class="doc_header"><code>translate_latlng</code><a href="__main__.py#L28" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>translate_latlng</code>(<strong><code>input</code></strong>:<code>list</code>)</p>
-</blockquote>
-<p>Translating the lat lng into tuple format, to be used to mathematically identify the nearest neighbor</p>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<h4 id="kdtree_neighbors" class="doc_header"><code>kdtree_neighbors</code><a href="__main__.py#L34" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>kdtree_neighbors</code>(<strong><code>reference</code></strong>:<code>list</code>, <strong><code>query_data</code></strong>:<code>list</code>)</p>
-</blockquote>
-<p>Identify the nearest neighbor for <em>query_data</em>[list of (lat,lng)] to the <em>reference</em>[list of (lat,lng)], returning the matching reference index</p>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<h4 id="train_plan__latlng" class="doc_header"><code>train_plan__latlng</code><a href="__main__.py#L39" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>train_plan__latlng</code>(<strong><code>data</code></strong>:<code>DataFrame</code>)</p>
-</blockquote>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<h4 id="train_plan__nbusers" class="doc_header"><code>train_plan__nbusers</code><a href="__main__.py#L45" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>train_plan__nbusers</code>(<strong><code>data</code></strong>:<code>DataFrame</code>)</p>
-</blockquote>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<h4 id="train_time_features" class="doc_header"><code>train_time_features</code><a href="__main__.py#L48" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>train_time_features</code>(<strong><code>data</code></strong>:<code>DataFrame</code>)</p>
-</blockquote>
-<p>Modify the train dataset inplace to generate time features (<em>month_delta</em> and <em>account start year</em>)</p>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<h4 id="census_income_median" class="doc_header"><code>census_income_median</code><a href="__main__.py#L55" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>census_income_median</code>(<strong><code>data</code></strong>:<code>DataFrame</code>)</p>
-</blockquote>
-<p>Calculate the median income and working pop for region excluding outliers (above 10K SGD and 0 SGD)</p>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<h4 id="census_income_avg" class="doc_header"><code>census_income_avg</code><a href="__main__.py#L65" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>census_income_avg</code>(<strong><code>data</code></strong>:<code>DataFrame</code>)</p>
-</blockquote>
-<p>Calculate average income based on the avg(pop * income)</p>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<h4 id="gini_processing" class="doc_header"><code>gini_processing</code><a href="__main__.py#L76" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>gini_processing</code>(<strong><code>census_perc_dt_melt</code></strong>:<code>DataFrame</code>)</p>
-</blockquote>
-<p>Parsing the income percent into np.array for gini calculation</p>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<h4 id="gini" class="doc_header"><code>gini</code><a href="__main__.py#L108" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>gini</code>(<strong><code>array</code></strong>)</p>
-</blockquote>
-<p>Calculate the Gini coefficient of a numpy array.</p>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<h4 id="census_sentiment_analy" class="doc_header"><code>census_sentiment_analy</code><a href="__main__.py#L125" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>census_sentiment_analy</code>(<strong><code>input</code></strong>:<code>str</code>)</p>
-</blockquote>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<h4 id="convert_sent2score" class="doc_header"><code>convert_sent2score</code><a href="__main__.py#L129" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>convert_sent2score</code>(<strong><code>input</code></strong>:<code>dict</code>)</p>
-</blockquote>
-<p>Extract and convert the sentimental assignemnt to 0 (Negative), 0.5 (Neutral), 1 (Positive)</p>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<h4 id="transform_churn_series" class="doc_header"><code>transform_churn_series</code><a href="__main__.py#L141" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>transform_churn_series</code>(<strong><code>extracted_features_dt</code></strong>:<code>DataFrame</code>, <strong><code>dt_churn</code></strong>:<code>DataFrame</code>)</p>
-</blockquote>
-<p>Extract churn data for significant test in x</p>
-
-</div>
-
-</div>
-
 </div>
 </div>
 

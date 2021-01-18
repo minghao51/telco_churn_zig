@@ -2,14 +2,12 @@
 > Churn model + model interpration
 
 
-This file will become your README and also the index of your documentation.
-
 ## Install
 
 ### windows
 To create a conda env based on the included conda file
 
-`conda env create --name <env name> -f <environment-name>.yml`
+`conda env create --name <env name> -f conda-env.yml`
 
 ### linux
 `pip install -r requirements.txt`
