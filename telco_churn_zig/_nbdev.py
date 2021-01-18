@@ -30,8 +30,8 @@ modules = ["L0_exploration.py",
            "L2B_geo_model_explore.py",
            "L3A_user_model.py"]
 
-doc_url = "https://howt51.github.io/telco_churn_zig/"
+doc_url = "https://minghao51.github.io/telco_churn_zig/"
 
-git_url = "https://github.com/howt51/telco_churn_zig/tree/master/"
+git_url = "https://github.com/minghao51/telco_churn_zig/tree/master/"
 
 def custom_doc_links(name): return None
