@@ -56,7 +56,6 @@ MarkupSafe==1.1.1
 matplotlib==3.3.3
 mistune==0.8.4
 msgpack==1.0.2
-nb-conda-kernels==2.3.1
 nbclassic==0.2.6
 nbclient==0.5.1
 nbconvert==6.0.7
@@ -95,8 +94,6 @@ PySocks==1.7.1
 python-dateutil==2.8.1
 pytz==2020.5
 PyWavelets==1.1.1
-pywin32==228
-pywinpty==0.5.7
 PyYAML==5.3.1
 pyzmq==21.0.0
 qtconsole==5.0.1
@@ -109,10 +106,10 @@ scikit-learn==0.24.0
 scipy==1.6.0
 seaborn==0.11.1
 Send2Trash==1.5.0
-setuptools==49.6.0.post20210108
-shap==0.37.0
+setuptools
+shap
 six==1.15.0
-slicer==0.0.7
+slicer
 sniffio==1.2.0
 sortedcontainers==2.3.0
 statsmodels==0.12.1
